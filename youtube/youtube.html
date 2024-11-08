@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> youtube </title>
+        <style>
+            .video1{
+                width: 100%;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 14px;
+                display: block;
+                position: relative;
+                margin-bottom: 8px;
+            }
+                .video2{
+                width: 100%;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 14px;
+                display: block;
+                position: relative;
+                margin-bottom: 8px;
+                }
+                .video3{
+                width: 100%;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 14px;
+                display: block;
+                position: relative;
+                margin-bottom: 8px;
+                }
+                .video4{
+                width: 100%;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 14px;
+                display: block;
+                position: relative;
+                margin-bottom: 8px;
+                }
+                .video5{
+                width: 100%;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 14px;
+                display: block;
+                position: relative;
+                margin-bottom: 8px;
+                }
+                .video6{
+                width: 100%;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 14px;
+                display: block;
+                position: relative;
+                margin-bottom: 8px;
+            }
+            .video-title{
+            
+                font-weight: 3px;
+                font-family: Arial;
+                line-height: 20px;
+                font-weight: bold;
+                font-size: 14px;
+                margin-bottom: 0px;
+                width: 280px;
+            }
+            .video-statu{
+                font-family:Roboto, Arial, sans-serif ;
+                font-size: 12px;
+                font-weight: 400px;
+                height:18px ;
+                display: block;
+                box-sizing: border-box;
+                margin-block-end: 16px;
+                margin-bottom: 16px;
+                margin-top: 2px;
+            }
+            .video-arthour{
+               color: rgb(96, 96, 96);
+               font-family: Roboto, Arial, sans-serif;
+               font-size: 12px;
+               font-weight: 400px;
+               line-height: 18px;
+               text-decoration-style: solid;
+               margin-bottom: 2px;
+               margin-top: 6px;
+                 
+            }
+            .dib1{
+                width: 100%;
+                position: relative;
+            
+            }
+            .serach{
+                display: block;
+            }
+            .dib2{
+             vertical-align: top;
+            width: 100%;
+            position: relative;
+            }
+            .dib3{
+                position: relative;
+            }
+            .dib4{
+               position: relative;
+            }
+            .dib5{
+              position: relative;
+            }
+            .dib6{
+              position: relative;
+            }
+            .profile-pic{
+          
+              width: 50px;
+              vertical-align: top;
+            }
+            .s{
+                display: grid;
+                grid-template-columns: 40px 1fr;
+                margin-top: 5px;
+            }
+            .picture-info{
+            
+            width: 200px;
+            
+            }
+            .profile-picture{
+                width: 36px;
+                border-radius: 25px;
+                margin-top: 10px;
+                
+            }
+            .gride{
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+            .profile-pic2{
+               margin-top: 10px;
+                width: 36px;
+            }
+            .ss{
+                display: grid;
+                grid-template-columns: 40px 1fr;
+            }
+            .img2{
+                width: 40px;
+                border-radius: 25px;
+            }
+            .profile-pic2{
+                width: 50px;
+            }
+            .all{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 40px;
+            }
+            @media (max-width: 750px){
+                .all{
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+                
+            .header{
+                height: 55px;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: fixed;
+                top:0px;
+                right: 0px;
+                left: 0px;
+
+                background-color: #f8f8f8;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: #dedcdc;
+                z-index: 100;
+            }
+            .left-section{
+               background-color: white;
+               display: flex;
+               align-items: center;
+            }
+            .logo{
+                height:24px;
+                margin-left: 24px;
+                margin-right: 24px;
+                
+            }
+            .youtubelogo{
+                height: 20px; 
+            }
+            .middle-section{
+                flex: 1;
+                max-width: 500px;
+                margin-left: 70px;
+                margin-right: 35px;
+                display: flex;
+                align-items: center;
+            }
+            .right-section
+            {
+             width: 180px;
+             display:flex;
+             align-items: center;
+             justify-content: space-between;
+             margin-right: 20px;
+             flex-shrink: 0;
+            }
+            .voice{
+                height:40px;
+                width:60px;
+                padding-left: 10px;
+                background-color: 240,240,240;
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(223, 220, 220);
+                
+            }
+            .serach-button{
+                height: 40px;
+                width: 40px;
+                border-radius: 20px;
+                border: none;
+                margin-left: 10px;
+                background-color:  #f8f8f8;;
+            }
+            .serach-bar{
+                flex: 1;
+                height: 36px;
+                padding-left: 10px;
+                font-size: 16px;
+                border-width: 1px;
+                border-color: rgb(240, 237, 237);
+                border-style:  solid;
+                border-radius: 2px;
+                box-shadow: inset 1px 2px 3px rgba(0, 0,0, 0.05);
+                width: 0;
+                position: relative;
+            }
+            .serach-bar.tool{
+                position: absolute;
+                background-color: gray;
+                color: white;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left: 8px;
+                padding-right: 8px;
+                border-radius: 3px;
+                bottom: -30px;
+                opacity: 0;
+            }
+            .serach-bar:hover.tool{
+              opacity: 1;
+            }
+            .serach-bar::placeholder{
+                font-family: Arial;
+                font-size: 16px;
+            }
+            .voice-icon{
+                height: 24px;
+                margin-top: 4px;
+            }
+            .left-img{
+                height: 24px;
+                vertical-align: middle;
+            }
+            .middle-img{
+             height: 24px;
+            }
+            .right-img{
+              height: 24px;
+            }
+            .last-img{
+              height: 32px;
+              border-radius: 16px;
+            }
+            .siderbar{
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                top:55px;
+                background-color: #f8f8f8;
+                width: 72px;
+                z-index: 200;
+                cursor: pointer;
+            }
+            .video-one{
+              font-family: Arial;
+              font-weight: 500;
+              font-size: 12px;
+              background-color: black;
+              color: white;
+              position: absolute;
+              right: 10px;
+              bottom: 135px;
+              padding-left: 2px;
+              padding-right: 2px;
+              padding-top: 4px;
+              padding-bottom: 4px;
+              border-radius: 2px;
+
+            }
+            .video-two{
+                font-family: Arial;
+              font-weight: 500;
+              font-size: 12px;
+              background-color: black;
+              color: white;
+              position: absolute;
+              right: 10px;
+              bottom: 135px;
+              padding-left: 4px;
+              padding-right: 4px;
+              padding-top: 4px;
+              padding-bottom: 4px;
+              border-radius: 2px;
+            }
+            .video-three{
+                font-family: Arial;
+              font-weight: 500;
+              font-size: 12px;
+              background-color: black;
+              color: white;
+              position: absolute;
+              right: 10px;
+              bottom: 135px;
+              padding-left: 4px;
+              padding-right: 4px;
+              padding-top: 4px;
+              padding-bottom: 4px;
+              border-radius: 2px;
+            }
+            .video-four{
+                font-family: Arial;
+              font-weight: 500;
+              font-size: 12px;
+              background-color: black;
+              color: white;
+              position: absolute;
+              right: 10px;
+              bottom: 135px;
+              padding-left: 4px;
+              padding-right: 4px;
+              padding-top: 4px;
+              padding-bottom: 4px;
+              border-radius: 2px;
+            }
+            .video-five{
+                font-family: Arial;
+              font-weight: 500;
+              font-size: 12px;
+              background-color: black;
+              color: white;
+              position: absolute;
+              right: 10px;
+              bottom: 135px;
+              padding-left: 4px;
+              padding-right: 4px;
+              padding-top: 4px;
+              padding-bottom: 4px;
+              border-radius: 2px;
+            }
+            .video-six{
+                font-family: Arial;
+              font-weight: 500;
+              font-size: 12px;
+              background-color: black;
+              color: white;
+              position: absolute;
+              right: 10px;
+              bottom: 135px;
+              padding-left: 4px;
+              padding-right: 4px;
+              padding-top: 4px;
+              padding-bottom: 4px;
+              border-radius: 2px;
+            }
+            .notifications-icon{
+             position: relative;
+            }
+            .notifications-style{
+                position: absolute;
+                top: -2px;
+                right: -5px;
+                background-color:rgb(200,0, 0);
+                color: white;
+                font-size: 11px;
+                border-radius: 12px;
+                font-family: roboto,Arial;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+            .sidebar-style{
+                height: 74px;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .sidebar-style:hover{
+                background-color: lightgray;
+            }
+            .sidebar-style img{
+                height: 24px;
+                margin-bottom: 4px;
+            }
+            .sidebar-style div{
+                font-family: roboto,Arial;
+                font-size: 10px;
+            }
+
+            </style>
+    </head>
+  <body style="margin: 0px;
+  padding-top:80px ;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(248, 248, 248);">
+    <div class="header">
+        <div class="left-section">
+            <img class="logo" src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\hamburger-menu.svg">
+            <img  class="youtubelogo" src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\youtube-logo.svg"> 
+        </div>
+        <div class="middle-section">
+            <input  class="serach-bar" text" placeholder="search">
+            
+            <button class="voice">
+                <img   class="voice-icon"    src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\search.svg">
+                <div class="tool"></div> 
+            </button>
+            <button class="serach-button">
+                <img src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\voice-search-icon.svg">
+            </button>
+            
+        </div>
+        <div class="right-section"> 
+            <img class="left-img" src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\upload.svg">
+            <img class="middle-img" src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\youtube-apps.svg">
+            <div class="notifications-icon">
+                <img class="right-img" src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\notifications.svg">
+                <div class="notifications-style">3</div>
+            </div>
+            <img class="last-img" src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\my-channel.jpeg">
+        </div>  
+    </div>
+    <div class="siderbar">
+        <div class="sidebar-style">
+            <img src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\home.svg">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-style">
+            <img src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\explore.svg">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-style">
+            <img src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\subscriptions.svg">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-style">
+            <img src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\originals.svg">
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-style">
+            <img src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\youtube-music.svg">
+            <div>Youtube-music</div>
+        </div>
+        <div class="sidebar-style">
+            <img src="C:\Users\Sandeep C\OneDrive\Desktop\html-css\youtube\library.svg">
+            <div>Library</div>
+        </div>
+    </div>
+    <div class="all">
+        <div class="dib1">
+        <div>
+            <img class="video1" src="download.jpeg">
+            <div class="video-one">14:20</div>
+        </div>
+        <div class="s">
+        <div class="profile-pic">
+            <img  class="profile-picture"   src="channel-1.jpeg">
+        </div>
+        <div class="picture-info">
+            <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class="video-arthour">Marques Brownlee</p>
+            <p class="video-statu">3.4M views &middot; 6 months ago</p>
+        </div>
+        </div>
+        </div>
+        <div class="dib2">
+            <div>
+                <img class="video2" src="thumbnail-2.webp">
+                <div class="video-two">8:22</div>
+            </div>
+            <div class="s">
+            <div class="profile-pic">
+                <img  class="profile-picture"   src="channel-2.jpeg">
+            </div>
+            <div class="picture-info">
+                <p class="video-title">Try Not To Laugh Challenge #9</p>
+                <p class="video-arthour">Marques Brownlee</p>
+                <p class="video-statu">19M views &middot;4 years ago </p>
+            </div>
+            </div>
+            </div>
+            <div class="dib3">
+                <div>
+                    <img class="video3" src="thumbnail-3.webp">
+                    <div class="video-three">9:13</div>
+                </div>
+                <div class="s">
+                <div class="profile-pic">
+                    <img  class="profile-picture"   src="channel-3.jpeg">
+                </div>
+                <div class="picture-info">
+                    <p class="video-title">
+                        Crazy Tik Toks Taken Moments Before DISASTER</p>
+                    <p class="video-arthour">SSSniperWolf</p>
+                    <p class="video-statu">12M views &middot; 1 year ago  </p>
+                </div>
+                </div>
+                </div>
+                <div class="dib4">
+                    <div>
+                        <img class="video4" src="thumbnail-4.webp">
+                        <div class="video-four">22:19</div>
+                    </div>
+                    <div class="s">
+                    <div class="profile-pic">
+                        <img  class="profile-picture"   src="channel-4.jpeg">
+                    </div>
+                    <div class="picture-info">
+                        <p class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+                        <p class="video-arthour">Veritasium</p>
+                        <p class="video-statu">18M views  &middot; 4 months ago</p>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="dib5">
+                        <div>
+                            <img class="video5" src="thumbnail-5.webp">
+                            <div class="video-five">11:17</div>
+                        </div>
+                        <div class="s">
+                        <div class="profile-pic">
+                            <img  class="profile-picture"   src="channel-5.jpeg">
+                        </div>
+                        <div class="picture-info">
+                            <p class="video-title">
+                                Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+                            <p class="video-arthour">CS Dojo</p>
+                            <p class="video-statu">519K views &middot; 5 years ago</p>
+                        </div>
+                        </div>
+                        </div>
+                
+        <div class="dib6">
+            <div>
+                <img class="video6" src="thumbnail-6.webp">
+                <div class="video-six">19:59</div>
+            </div>
+            <div class="ss">
+            <div class="profile-pic">
+                <img  class="profile-picture"   src="channel-6.jpeg">
+            </div>
+            <div class="picture-info">
+                <p class="video-title">
+                    Anything You Can Fit In The Circle I’ll Pay For</p>
+                <p class="video-arthour">MrBeast</p>
+                <p class="video-statu">141M views &middot; 1 year ago </p>
+            </div>
+        </div>
+        </div>
+        </div>
+    </body>
+</html>
